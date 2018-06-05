@@ -10,7 +10,7 @@ class BG {
         $.getJSON('http://tbot.vvm.space/api/sin/cto-btc', (data) => {
             // alert(JSON.stringify(data.to));
             chrome.browserAction.setBadgeText({
-                text: data.to.toString()
+                text: data.buy.to.toString()
             });
             chrome.browserAction.setBadgeBackgroundColor({
                 color: "green"
